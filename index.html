@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Grade Calculator</h1>
+        <div class="input-section">
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" placeholder="Enter student name">
+            <label for="student-grade">Cgpa:</label>
+            <input type="number" id="student-grade" placeholder="Enter student Cgpa">
+            <button onclick="addGrade()">Add Cgpa</button>
+        </div>
+        <div class="grades-list">
+            <h2>CGPA:</h2>
+            <ul id="grades-list"></ul>
+        </div>
+        <div class="results-section">
+            <button onclick="calculateResults()">Calculate Results</button>
+            <p id="average-grade">Average Grade %: </p>
+            <p id="highest-grade">Highest Grade ✌️: </p>
+            <p id="lowest-grade">Lowest Grade  🥲: </p>
+        </div>
+    </div>
+        <footer>
+            <div class="contact">
+                <p>&copy; Student Grades Calculator</p>
+                <p>UEVDev Web Developer</p>
+                <div class="social-links">
+                    <a href="https://github.com/UEDev106" target="_blank"><img src="assets/github-logo.png"
+                            alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/aliraza106?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img
+                            src="assets/linkedin-logo.png" alt="LinkedIn"></a>
+                   
+                </div>
+            </div>
+        </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

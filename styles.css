@@ -1,0 +1,197 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #191a1d;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.input-section, .grades-list, .results-section {
+    margin-bottom: 20px;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Grades List Styling */
+.grades-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.grades-list ul li {
+    background: #7cb5f1;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-button {
+    background: #d9534f;
+    border: none;
+    width: max-content;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    transition: background 0.3s ease;
+}
+
+.delete-button:hover {
+    background: #c9302c;
+}
+
+/* Results Section Styling */
+.results-section p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#average-grade {
+    background-color: #e2f0d9;
+    color: #2f7a31;
+}
+
+#highest-grade {
+    background-color: #fde2e2;
+    color: #d9534f;
+}
+
+#lowest-grade {
+    background-color: #e8e9ed;
+    color: #444;
+}
+
+footer {
+    text-align: left;
+    padding: none;
+    font-size: 2.9em;
+    color: #777;
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #d6a9a9; 
+    color: rgb(20, 9, 9);
+    font-weight: bolder;
+}
+footer:hover{
+  background-color: #cabebe; 
+  transition: 1s ease-in-out;
+  box-shadow: #777;
+  font-size: 350px;
+  cursor: pointer;
+  border-radius: 15%;  
+}
+
+footer .contact {
+    display: flex;
+    align-items: center;
+    color: #0c0808;
+    text-align: left;
+    justify-content: center;
+}
+
+footer .contact p {
+    margin: 15px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+footer .contact .social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+footer .contact .social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer .contact .social-links a:hover {
+    color: #ffeb3b;
+    text-shadow: 1px 1px 4px red;
+}
+
+.social-links a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+.social-links a:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+}
